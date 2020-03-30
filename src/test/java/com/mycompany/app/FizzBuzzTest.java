@@ -1,11 +1,10 @@
 package com.mycompany.app;
 
+import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-import org.junit.Test;
-
 public class FizzBuzzTest {
-    
+
     @Test
     public void process_shouldReturnFizz_whenInputIs3() {
         FizzBuzz fizzBuzz = new FizzBuzz();
@@ -47,5 +46,4 @@ public class FizzBuzzTest {
 
         assertEquals("Buzz", fizzBuzz.process(10));
     }
-
 }

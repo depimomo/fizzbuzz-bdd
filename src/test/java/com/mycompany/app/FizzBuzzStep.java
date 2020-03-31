@@ -11,17 +11,17 @@ public class FizzBuzzStep {
     int number;
 
     @Given("user printing number using FizzBuzz")
-    public void userPrintingNumberUsingFizzBuzz() {
+    public void user_printing_number_using_FizzBuzz() {
         fizzBuzz = new FizzBuzz();
     }
 
     @When("the number is {int}")
-    public void theNumberIs(Integer input) {
+    public void the_number_is(Integer input) {
         number = input;
     }
 
     @Then("it will print {string}")
-    public void itWillPrintNumber(String input) {
+    public void it_will_print_number(String input) {
         assertEquals(input, fizzBuzz.process(number));
     }
 }

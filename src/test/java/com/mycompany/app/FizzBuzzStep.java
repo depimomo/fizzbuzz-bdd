@@ -20,23 +20,8 @@ public class FizzBuzzStep {
         number = input;
     }
 
-    @Then("it will print Fizz")
-    public void itWillPrintFizz() {
-        assertEquals("Fizz", fizzBuzz.process(number));
-    }
-
-    @Then("it will print Buzz")
-    public void itWillPrintBuzz() {
-        assertEquals("Buzz", fizzBuzz.process(number));
-    }
-
-    @Then("it will print FizzBuzz")
-    public void itWillPrintFizzBuzz() {
-        assertEquals("FizzBuzz", fizzBuzz.process(number));
-    }
-
-    @Then("it will print {int}")
-    public void itWillPrintNumber(Integer input) {
-        assertEquals(input.toString(), fizzBuzz.process(number));
+    @Then("it will print {string}")
+    public void itWillPrintNumber(String input) {
+        assertEquals(input, fizzBuzz.process(number));
     }
 }
